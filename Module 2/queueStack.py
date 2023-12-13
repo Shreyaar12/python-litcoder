@@ -18,6 +18,7 @@
 # Output:
 # 14
 # 78
+
 class CustomQueue:
     def __init__(self):
         self.stack1 = []  # For enqueue operation
