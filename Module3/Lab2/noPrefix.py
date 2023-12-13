@@ -3,7 +3,7 @@ def check_passwords(passwords):
     for i in range(len(passwords) - 1):
         # Check if the current password is a prefix of the next
         if passwords[i] == passwords[i + 1][:len(passwords[i])]:
-            return f"BAD PASSWORD"
+            return f"BAD PASSWORD\n{passwords[i]} {passwords[i + 1]}"
     return "GOOD PASSWORD"
 
 # User input handling
